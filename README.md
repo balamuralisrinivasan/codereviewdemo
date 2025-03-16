@@ -20,6 +20,7 @@ A modern Spring Boot application for managing inventory and orders. This system 
 - **Lombok**: To reduce boilerplate code
 - **SpringDoc OpenAPI**: For API documentation
 - **Maven**: For dependency management and build
+- **Allure**: For test reporting
 
 ## Getting Started
 
@@ -54,6 +55,35 @@ A modern Spring Boot application for managing inventory and orders. This system 
    ```
 
 The application will start on port 8080 by default.
+
+### Running Tests with Allure Reporting
+
+The project uses Allure for test reporting. To run tests and generate Allure reports:
+
+1. Run the tests with Allure reporting enabled:
+   ```bash
+   mvn clean test allure:report -s settings.xml
+   ```
+
+2. To view the Allure report, you can use one of the following methods:
+
+   a. Using the Allure command-line tool (if installed):
+   ```bash
+   allure open target/allure-reports
+   ```
+
+   b. Using the downloaded Allure binary:
+   ```bash
+   .allure/allure-2.24.0/bin/allure open target/allure-reports
+   ```
+
+   c. Serve the report using a simple HTTP server:
+   ```bash
+   cd target/allure-reports && python -m http.server 8000
+   ```
+   Then open http://localhost:8000 in your browser.
+
+The Allure report provides detailed test results, including test execution time, failures, and attachments.
 
 ### Accessing the Application
 
