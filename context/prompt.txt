@@ -1,0 +1,15 @@
+Ok  now you have an understanding of codebase document @codereview.md the following 1. Upgrade to springboot version latest  f Spring Boot is 3.2.3 .  
+I want to explore  Record classes for DTOs
+* Pattern matching for instanceof
+* Switch expressions
+* Text blocks for SQL queries or JSON templates
+* Sealed classes for domain models Spring WebFlux for non-blocking APIs
+* Reactive repositories with R2DBC
+* Reactive security Micrometer for metrics collection
+Distributed tracing with Spring Cloud Sleuth or Micrometer Tracing
+Prometheus integration
+Actuator endpoints customization Reactive Programming:
+
+Spring WebFlux for non-blocking APIs
+Reactive repositories with R2DBC
+Reactive security
